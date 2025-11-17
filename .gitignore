@@ -7,6 +7,8 @@ __pycache__/
 venv/
 .env/
 
+# TensorFlow / Keras models (optional if too big)
+models/*.h5
 
 # Debug images
 static/debug/
@@ -14,5 +16,6 @@ static/debug/
 # OS files
 .DS_Store
 Thumbs.db
+
 
 static/last_capture.jpg
