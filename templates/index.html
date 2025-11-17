@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Recognition</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<h1>😊 Emotion Recognition Web App</h1>
+
+<form action="/capture" method="post">
+    <button type="submit">Capture from Webcam</button>
+</form>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <button type="submit">Analyze</button>
+</form>
+
+{% if image_path %}
+    <h3>Captured Image:</h3>
+    <img src="{{ image_path }}?{{ time }}" alt="Captured Image" width="300">
+    <h2>Predicted Emotion: {{ prediction }}</h2>
+{% elif prediction %}
+    <h2>Predicted Emotion: {{ prediction }}</h2>
+{% endif %}
+
+</body>
+</html>

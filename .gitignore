@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# TensorFlow / Keras models (optional if too big)
+models/*.h5
+
+# Debug images
+static/debug/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+static/last_capture.jpg
