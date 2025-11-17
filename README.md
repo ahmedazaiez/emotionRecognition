@@ -31,11 +31,11 @@ A Flask-based web application for real-time and uploaded image emotion recogniti
 
 3. Place your model:
 
-Add your model.h5 file in the models/ folder.
+- Add your model.h5 file in the models/ folder.
 
-Example path: models/model.h5.
+- Example path: models/model.h5.
 
-you will have to run the emotionrecognition.ipynb file
+- you will have to run the emotionrecognition.ipynb file
 
 4. Run the app:
 ```bash
